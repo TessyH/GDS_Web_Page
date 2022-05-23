@@ -1,0 +1,65 @@
+.services {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: auto;
+    flex-flow: row wrap;
+
+}
+body{
+    background-image: url("SBG.jpg");
+}
+
+#menu {
+    text-align-all: center;
+}
+#intro2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    color: #f2f4f4;
+}
+
+#logo{
+    justify-content: flex-start;
+    height: auto;
+    max-width: 100%;
+
+}
+
+#NavList{
+
+}
+
+#navbarNav {
+    margin: 0;
+    justify-content: flex-start;
+    height: auto;
+    font-size: large;
+    background-color: black;
+    border-color: black;
+    width: 50%;
+    color: #f2f4f4;
+}
+#intro {
+    margin-top: 0;
+    background-image: url("waves.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#GDS {
+    text-align-all: center;
+    color: #f2f4f4;
+}
+
+#mission{
+    font-size: large;
+}
+
+ #Welcome {
+
+ }
+ #ServicePage{
+
+ }

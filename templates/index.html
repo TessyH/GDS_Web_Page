@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- domestic style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('.static', filename='style.css') }}">
+
+    <title>{% block title %}
+        Index
+    {% endblock %}
+    </title>
+</head>
+<body>
+
+<div class="navigation-container" id="menu">
+<div class="container col d-flex justify-content-center" id="intro2"><!-- nav center -->
+    <!-- Nav bar -->
+
+
+
+        <nav class="navbar navbar-expand-md navbar-light col justify-content-center" id="navbar" style="width: 50%;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav" id="NavList">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/glider">Glider</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <!--
+                        Disabled nav bar button code for reference
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+                        -->
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+    <div class="container col d-flex justify-content-center" id="intro">
+        <br>
+        <div id="GDS">
+            <h1><br>Glider Development Services</h1> <!-- replace this with PS image -->
+            <br>
+            <!-- replace the below h5 mission statement with PS image -->
+            <p id="mission">"A pursuit in creating a community of niche developers, who build solutions that affiliate
+                industries need."<br><br></p></div>
+    </div>
+
+<div><br><br><br></div>
+    {% block content %}
+        <div class="container" id="Welcome" style="height: 2000px;">
+        <div>
+        <h3></h3>
+
+            <br><br>
+            <p>The team here at Glider Development Services are experienced in all faucets of the affiliate industry
+                and are excited you found us. We work in a contract structure with clients by the hour,
+                but also accept a limited number of monthly retainers.
+                <br>You can fill out a brief<a href="/contact"> contact form</a>, or <a
+                        href="mailto: tessyhetzel.gds@gmail.com"> email</a> us directly to get started.
+                <!-- add direct in word links -->
+            </p>
+        </div>
+
+        <!-- <p>This is {{ gds }}.</p>  -->
+
+
+    {% endblock %}
+
+    <!-- JavaScript from bootstrap documentation site -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <!-- JS page call -->
+    <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+    </div>
+
+
+    <div class="container col d-flex justify-content-center"
+         style="position: relative; height: 50px; bottom: 1px; background-color: dimgray" id="footer">
+        <footer>The solutions you seek are near. Contact the jedi of tracking today for your data revolution</footer>
+    </div>
+
+</body>
+</html>
